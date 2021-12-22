@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Encryptor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+
+        <div class="heading">
+            <h1>Message Encryptor</h1>
+
+            <a href="" id="whatsappLink">
+                <div class="img press">
+                    <img src="https://img.icons8.com/material-outlined/96/000000/whatsapp.png"/>
+                </div>
+            </a>
+
+        </div>
+
+        <textarea type="text" id="write" placeholder="Write your message here or paste Encrypted message" autofocus></textarea>
+        <input type="number" id="pass" placeholder="Password (maxLength : 8)">
+        <textarea type="text" id="output" placeholder="Here Will be the output of your Message." disabled></textarea>
+        <div class="bottom"></div>
+    </div>
+    <div class="buttons">
+        <button class="press" onclick="clearText()">Clear Text</button>
+        <button class="press" onclick="copyText()">Copy</button>
+    </div>
+    <div class="end">
+        <h3 class="center">By <a href="https://www.facebook.com/Abinash.Dark.Rose/">Abinash</a>,  Github <a href="https://github.com/DarkRoseAbinash">Link</a></h3>
+        <p class="center">*Shorter Messages with Password</p>
+    </div>
+    <script src="engine.js"></script>
+</body>
+</html>
