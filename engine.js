@@ -2,7 +2,6 @@ let input = document.getElementById("write");
 let output = document.getElementById("output");
 let pass = document.getElementById("pass");
 
-
 function clearText (){
     input.value = "";
     input.focus()
@@ -19,8 +18,6 @@ function copyText (){
 const data = "‌‍‎​";
 const charEncode = "⁝∶⁚";
 
-
-
 function clearText (){
     input.value = "";
     input.focus()
@@ -35,7 +32,6 @@ function copyText (){
     input.select();
 }
 
-
 function encodeCh(ch,p){
     let encoded = ""
     if(p==undefined||Number(p)==NaN)
@@ -48,8 +44,6 @@ function encodeCh(ch,p){
     }
     return encoded;
 }
-
-
 
 function decodeCh(ch,p){
     let num = "";
@@ -85,14 +79,12 @@ function codeByLen(n){
     return code;
 }
 
-
 function removeFrontCh(str){
     for(let i in charEncode)
         while(str.includes(charEncode[i]))
             str = str.replace(charEncode[i],""); 
     return str;
 }
-
 
 //Set Oninput event on input
 input.oninput = function(){write();}
@@ -124,5 +116,3 @@ function write(){
     output.value = outData;
     document.getElementById("whatsappLink").href = "whatsapp://send?text=" + outData;
 }
-
-
